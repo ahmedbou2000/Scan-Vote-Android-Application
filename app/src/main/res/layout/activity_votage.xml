@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".VotageActivity"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:background="#673AB7"
+
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="@string/page_de_votes"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="@string/enterez_votre_choix_avec_la_justification_description"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp"
+            android:layout_gravity="center">
+
+
+            <RadioButton
+                android:id="@+id/radiobtnAccp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:checked="true"
+                android:padding="7dp"
+                android:text="ACCEPTER"
+                android:textColor="#58BD33"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/radiobtnRef"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="7dp"
+                android:text="REFUSER"
+                android:textColor="#CD0808"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/txtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="127dp"
+            android:layout_margin="20dp"
+            android:background="#22F1D685"
+            android:ems="10"
+            android:hint="@string/description"
+
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/btnEnregistrer"
+            android:layout_width="322dp"
+            android:layout_height="63dp"
+
+            android:layout_gravity="center_horizontal"
+            android:text="@string/enregistrer"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnAffichVotes"
+            android:layout_width="322dp"
+            android:layout_height="63dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:text="@string/afficher_les_votes"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnReturnScan"
+            android:layout_width="219dp"
+            android:layout_height="63dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:text="@string/scann"
+            android:textSize="24sp"
+            app:cornerRadius="20dp"
+            app:icon="?attr/actionModeCloseDrawable"
+            app:iconPadding="10dp"
+            app:iconSize="50dp" />
+
+
+    </LinearLayout>
+</ScrollView>

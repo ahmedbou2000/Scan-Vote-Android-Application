@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ScannActivity</string>
+    <string name="enterez_votre_choix_avec_la_justification_description">Enterez votre choix avec la justification (Description...)</string>
+    <string name="page_de_votes">PAGE DE VOTES</string>
+    <string name="accepter">Accepter</string>
+    <string name="refuser">Refuser</string>
+    <string name="enregistrer">ENREGISTRER</string>
+    <string name="description">Description ...</string>
+    <string name="scann">Scann</string>
+    <string name="afficher_les_votes">Afficher les Votes</string>
+    <string name="scanner_le_code_qr">Scanner le code QR</string>
+</resources>
